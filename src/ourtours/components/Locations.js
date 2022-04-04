@@ -1,30 +1,36 @@
 import React from "react";
 import datas from '../data'
 
-
-
 export default function Locations() {
 
+    const [tours , setTours] = React.useState(datas)
+
+
+    const removeContent = () => {
+        console.log('clicked')
+        console.log(tours)
+        setTours (tours.splice(1))
+    }
+
     //function
-    const showData = datas.map((data)=>{
+    const showData = tours.map((tour)=>{
         return (
             <div className="img-container">
-                <img src={data.img} />
+                <img src={tour.img} />
                 <div className="location-price-container">
-                    <h3>{data.tours}</h3>
-                    <h3>{data.price}</h3>
+                    <h3>{tour.tours}</h3>
+                    <h3>{tour.price}</h3>
                 </div>
                 <div className="description-container">
-                    <p>{data.description}</p>
+                    <p>{tour.description}</p>
                 </div>
                 <div className="btns-container">
-                    <button>Not Intereseted</button>
+                    <button className="remove-btn" onClick={removeContent}>Not Intereseted</button>
                 </div>
             </div>
         )
     })
     
-
     //render
     return (
         <div className="content">

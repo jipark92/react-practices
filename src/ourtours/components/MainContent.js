@@ -1,10 +1,8 @@
 import React from "react";
 import Locations from "./Locations";
 
-export default function MainContent () {
-    
-    
 
+export default function MainContent () {
 
     return (
         <>
@@ -12,7 +10,11 @@ export default function MainContent () {
                 <h1>Our Tours</h1>
                 <div className="seperator"></div>
             </header>
-            <Locations />
+            <div>
+                <Locations 
+                
+                />
+            </div>
         </>
     )
 }
