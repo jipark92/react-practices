@@ -77,7 +77,7 @@ img {
     background: none;
     border: none;
     border: 1px solid red;
-    width: 5rem;
+    width: 5.5rem;
     height: 2.5rem;
 }
 
@@ -86,7 +86,16 @@ img {
     background: none;
     border: none;
     border: 1px solid green;
-    width: 5rem;
+    width: 5.5rem;
+    height: 2.5rem;
+}
+
+.random-btn {
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    border: 1px solid blue;
+    width: 5.5rem;
     height: 2.5rem;
 }
 

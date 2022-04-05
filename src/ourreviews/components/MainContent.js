@@ -9,9 +9,6 @@ export default function MainContent () {
 
     const {id, img, name, job, description} = datas[simpsons]
 
-   
-
-
     const checkNumber = (number) => {
         if ( number > datas.length -1 ) {
             return 0
@@ -22,23 +19,30 @@ export default function MainContent () {
         }
     }
 
-
     const increase = () => {
         console.log('clicked')
         setSimpsons((simpson)=> {
-            let a = simpson + 1
-            return checkNumber(a)
+            let whichSimpson = simpson + 1
+            return checkNumber(whichSimpson)
         })
     }
-
-
 
     const decrease = () => {
         console.log('clicked')
         setSimpsons((simpson)=> {
-            let a = simpson - 1
-            return checkNumber(a)
+            let whichSimpson = simpson - 1
+            return checkNumber(whichSimpson)
         })
+    }
+
+    
+
+    const random = () => {
+        console.log('clicked random')
+
+        let randomNumber = Math.ceil(Math.random()*3)
+        console.log(randomNumber)
+        setSimpsons (randomNumber)
     }
 
     return (
@@ -52,6 +56,7 @@ export default function MainContent () {
             />
             <div className="button-container">
                 <button className="prev-btn" onClick={decrease}>PREV</button>
+                <button className="random-btn" onClick={random}> Random</button>
                 <button className="next-btn" onClick={increase}>NEXT</button>
             </div>
         </div>
