@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: skyblue;
+}
+
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.tabs-container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    background: none;
+    border: 2px dashed gold;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: aquamarine;
+}
+
+.menu-container{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.food {
+    border: 2px dashed gold;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 0.2rem;
+}
+
+img {
+    height: 150px;
+    width: 250px;
+}
