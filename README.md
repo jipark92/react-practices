@@ -8,3 +8,5 @@ live birthday notification page: https://jipark-reactbdaynoti.netlify.app/
 live our tours page: https://jipark-reactouttours.netlify.app/
 
 live our reviews page: https://jipark-ourreviews.netlify.app/
+
+live question&answers page: https://jipark-react-questionanswer.netlify.app/
