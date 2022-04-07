@@ -10,3 +10,7 @@ live our tours page: https://jipark-reactouttours.netlify.app/
 live our reviews page: https://jipark-ourreviews.netlify.app/
 
 live question&answers page: https://jipark-react-questionanswer.netlify.app/
+
+live our menu page: https://jipark-react-ourmenu.netlify.app/
+
+live all in one practice page: https://jipark-react-allinone.netlify.app/
