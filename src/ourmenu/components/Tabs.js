@@ -1,13 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 
-export default function Tabs() {
+export default function Tabs(props) {
     return (
         <div className="tabs-container">
-            <button>ALL</button>
-            <button>Breakfast</button>
-            <button>Lunch</button>
-            <button>Dinner</button>
-            <button>Dessert</button>
+            <button onClick={props.all}>ALL</button>
+            <button onClick={props.breakfast}>Breakfast</button>
+            <button onClick={props.lunch}>Lunch</button>
+            <button onClick={props.dinner}>Dinner</button>
+            <button onClick={props.dessert}>Dessert</button>
         </div>
     )
 }

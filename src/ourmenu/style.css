@@ -7,7 +7,6 @@
 .main-container {
     height: 100vh;
     width: 100vw;
-    background-color: skyblue;
 }
 
 .title-container{
@@ -27,7 +26,7 @@
 
 button {
     background: none;
-    border: 2px dashed gold;
+    border: 2px solid black;
     font-size: 1.3rem;
     padding: 0.3rem;
 }
@@ -48,14 +47,22 @@ button:hover{
 }
 
 .food {
-    border: 2px dashed gold;
+    border: 2px solid black;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 200px;
     gap: 0.8rem;
     padding: 0.2rem;
 }
 
+.img-container {
+    height: 100%;
+    border: 2px solid black;
+}
+
 img {
-    height: 150px;
-    width: 250px;
+    height: 100%;
+    width: 200px;
 }
